@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness App with Calories & Diet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness  App</h1>
+
+        <!-- Exercise Input Section -->
+        <div class="input-section">
+            <input type="text" id="exercise" placeholder="Enter Exercise Name">
+            <input type="number" id="duration" placeholder="Duration (minutes)">
+            <button onclick="addWorkout()">Add Workout</button>
+        </div>
+
+        <!-- Diet Input Section -->
+        <div class="input-section">
+            <input type="text" id="meal" placeholder="Enter Meal Name">
+            <input type="number" id="calories" placeholder="Calories (kcal)">
+            <button onclick="addDiet()">Add Meal</button>
+        </div>
+
+        <h2>Workout List</h2>
+        <ul id="workoutList"></ul>
+        <h3>Total Workout Time: <span id="totalTime">0</span> minutes</h3>
+        <h3>Total Calories Burned: <span id="totalCaloriesBurned">0</span> kcal</h3>
+
+        <h2>Diet List</h2>
+        <ul id="dietList"></ul>
+        <h3>Total Calories Consumed: <span id="totalCaloriesConsumed">0</span> kcal</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
